@@ -101,7 +101,7 @@ def check_size():
             fp = os.path.join(path, f)
             size += os.path.getsize(fp)
 
-    #display size
+    #rounds bytes to megabytes
     size=round((size/1000000),2)
 
     if size>= max_size:
